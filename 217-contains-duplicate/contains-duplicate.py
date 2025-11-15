@@ -7,9 +7,11 @@ class Solution:
                     return True
         return False '''
 
-        seen = set()
-        for n in nums:
-            if n in seen:
-                return True
-            seen.add(n)
-        return False
+        # seen = set()
+        # for n in nums:
+        #     if n in seen:
+        #         return True
+        #     seen.add(n)
+        # return False
+
+        return len(nums) != len(set(nums))
